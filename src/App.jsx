@@ -17,7 +17,7 @@ function App() {
             >
               <img
                 className="md:w-1/5 lg:max-w-lg w-2/5"
-                src="public/seiyalogo.png"
+                src="/seiyalogo.png"
               ></img>
             </a>
             <nav className="md:ml-auto text-base">
@@ -80,7 +80,7 @@ function App() {
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
             <div className="flex justify-center mb-1">
-              <img className="w-[48px]" src="public/usagi.png"></img>
+              <img className="w-[48px]" src="./usagi.png"></img>
             </div>
             <h1 className="text-2xl sm:text-3xl font-medium mb-2 text-blue-400">
               About Me
