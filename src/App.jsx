@@ -14,10 +14,10 @@ function App() {
             </img>
           </a>
           <nav className="md:ml-auto text-base">
-            <a href="#home" className="mr-5 hover:text-blue-400 duration-300 font-medium">Home</a>
-            <a href="#about" className="mr-5 hover:text-blue-400 duration-300 font-medium">About</a>
-            <a href="#works" className="mr-5 hover:text-blue-400 duration-300 font-medium">Works</a>
-            <a href="#works" className="hover:text-blue-400 duration-300 font-medium">Skills</a>
+            <a href="#home" className="mr-5 hover:text-blue-700 duration-300 font-medium">Home</a>
+            <a href="#about" className="mr-5 hover:text-blue-700 duration-300 font-medium">About</a>
+            <a href="#works" className="mr-5 hover:text-blue-700 duration-300 font-medium">Works</a>
+            {/* <a href="#works" className="hover:text-blue-700 duration-300 font-medium">Skills</a> */}
           </nav>
         </div>
       </header>
@@ -39,21 +39,7 @@ function App() {
             <span className="text-blue-400 font-semibold">視野を広げること</span>を大切にしています。<br/>
             よかったら見ていってください。
           </p>
-          <div className="flex md:justify-center">
-            <a href="https://github.com/seiya-lab" className="mr-5">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-              </svg>
-            </a>
-            <a href='mailto:22047seiya@gmail.com'>
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
-                  <path d="M3 7l9 6l9 -6"></path>
-              </svg>
-            </a>
-          </div>
+
           {/* <button className='text-white bg-blue-700 py-2 px-6 border-0 rounded text-lg hover:bg-blue-600 duration-300'>Contact</button> */}
         </div>
         <div className="md:w-1/3 lg:max-w-lg w-3/5">
@@ -86,7 +72,7 @@ function App() {
     <section className='text-gray-700 border-t border-gray-200' id="works">
       <div className='container px-5 py-20 mx-auto'>
         <div className='flex justify-center mb-1'>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-medal-2" width="48" height="48" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-medal-2" width="48" height="48" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M9 3h6l3 7l-6 2l-6 -2z"></path>
             <path d="M12 12l-3 -9"></path>
@@ -228,6 +214,29 @@ function App() {
         </div>
       </div>
     </section>
+
+    <footer className="text-white border-b border-gray-200 bg-blue-400">
+      <div className="container flex mx-auto p-4 flex-col md:flex-row items-center">
+        <p className='mb-1'>
+          ©️ 2023  Seiya Tanaka
+        </p>
+        <div className="flex md:ml-auto">
+            <a href="https://github.com/seiya-lab" className="mr-5">
+              <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-github" width="36" height="36" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+              </svg>
+            </a>
+            <a href='mailto:22047seiya@gmail.com'>
+              <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mail" width="36" height="36" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+                  <path d="M3 7l9 6l9 -6"></path>
+              </svg>
+            </a>
+          </div>
+      </div>
+    </footer>
     </>
   );
 }
