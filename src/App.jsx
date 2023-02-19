@@ -3,6 +3,7 @@ import "./App.css";
 import "./components/WorksCard";
 import CardNigetabi from "./components/contents/CardNigetabi";
 import CardPortfolio from "./components/contents/CardPortfolio";
+import CardMakeshihi from "./components/contents/CardMakeshihi";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -137,6 +138,7 @@ function App() {
           <div className="flex flex-wrap">
             <CardNigetabi />
             <CardPortfolio />
+            <CardMakeshihi />
           </div>
         </div>
       </section>
