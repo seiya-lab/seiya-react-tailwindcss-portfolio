@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import "./components/WorksCard";
 import CardNigetabi from "./components/contents/CardNigetabi";
+import CardPortfolio from "./components/contents/CardPortfolio";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -135,6 +136,7 @@ function App() {
           {/* カードのdivタグ */}
           <div className="flex flex-wrap">
             <CardNigetabi />
+            <CardPortfolio />
           </div>
         </div>
       </section>
