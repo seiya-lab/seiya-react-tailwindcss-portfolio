@@ -4,6 +4,7 @@ import "./components/WorksCard";
 import CardNigetabi from "./components/contents/CardNigetabi";
 import CardPortfolio from "./components/contents/CardPortfolio";
 import CardMakeshihi from "./components/contents/CardMakeshihi";
+import CardYokete from "./components/contents/CardYokete";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -139,6 +140,7 @@ function App() {
             <CardNigetabi />
             <CardPortfolio />
             <CardMakeshihi />
+            <CardYokete />
           </div>
         </div>
       </section>

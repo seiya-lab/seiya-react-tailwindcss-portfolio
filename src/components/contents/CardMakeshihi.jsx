@@ -7,7 +7,7 @@ const CardMakeshihi = () => {
   return (
     <Modal
       title={"市費管理アプリ"}
-      subtitle={"書類の入力量を半分に"}
+      subtitle={"書類の入力量を半分以下に"}
       date={"May.2022 - July.2022"}
       thumbnail={path + "thumbnail.png"}
       description={
