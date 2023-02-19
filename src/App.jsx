@@ -67,11 +67,8 @@ function App() {
         className="text-gray-700 border-t border-gray-200 bg-white"
         id="about"
       >
-        <div className="container px-5 py-6 mx-auto">
+        <div className="container px-5 pt-20 pb-6 mx-auto">
           <div className="text-center mb-4">
-            <div className="flex justify-center mb-1">
-              <img className="w-[48px]" src="./usagi.png"></img>
-            </div>
             <h1 className="text-2xl sm:text-3xl font-medium mb-2 text-blue-400">
               About Me
             </h1>
