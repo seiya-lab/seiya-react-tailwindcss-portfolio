@@ -141,7 +141,7 @@ function App() {
 
       <footer className="text-white border-b border-gray-200 bg-blue-400">
         <div className="container flex mx-auto p-4 flex-col md:flex-row items-center">
-          <p className="mb-1">©️ 2023 Seiya Tanaka</p>
+          <p className="mb-1">©︎ 2023 Seiya Tanaka</p>
           <div className="flex md:ml-auto">
             <a href="https://github.com/seiya-lab" className="mr-5">
               <svg
