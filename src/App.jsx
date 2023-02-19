@@ -5,6 +5,7 @@ import CardNigetabi from "./components/contents/CardNigetabi";
 import CardPortfolio from "./components/contents/CardPortfolio";
 import CardMakeshihi from "./components/contents/CardMakeshihi";
 import CardYokete from "./components/contents/CardYokete";
+import CardCancelChecker from "./components/contents/CardCancelChecker";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -141,6 +142,7 @@ function App() {
             <CardPortfolio />
             <CardMakeshihi />
             <CardYokete />
+            <CardCancelChecker />
           </div>
         </div>
       </section>
