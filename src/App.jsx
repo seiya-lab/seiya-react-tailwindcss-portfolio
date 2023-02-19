@@ -2,6 +2,10 @@ import { useState } from "react";
 import "./App.css";
 import "./components/WorksCard";
 import CardNigetabi from "./components/contents/CardNigetabi";
+import CardPortfolio from "./components/contents/CardPortfolio";
+import CardMakeshihi from "./components/contents/CardMakeshihi";
+import CardYokete from "./components/contents/CardYokete";
+import CardCancelChecker from "./components/contents/CardCancelChecker";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -135,13 +139,17 @@ function App() {
           {/* カードのdivタグ */}
           <div className="flex flex-wrap">
             <CardNigetabi />
+            <CardPortfolio />
+            <CardMakeshihi />
+            <CardYokete />
+            <CardCancelChecker />
           </div>
         </div>
       </section>
 
       <footer className="text-white border-b border-gray-200 bg-blue-400">
         <div className="container flex mx-auto p-4 flex-col md:flex-row items-center">
-          <p className="mb-1">©️ 2023 Seiya Tanaka</p>
+          <p className="mb-1">©︎ 2023 Seiya Tanaka</p>
           <div className="flex md:ml-auto">
             <a href="https://github.com/seiya-lab" className="mr-5">
               <svg

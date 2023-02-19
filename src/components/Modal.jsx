@@ -21,14 +21,20 @@ const Modal = (props) => {
       {showModal ? (
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-            <div className="relative w-auto my-6 p-4 max-w-4xl lg:max-w-xl">
+            <div className="relative w-auto my-6 p-4 max-w-6xl lg:max-w-xl">
               {/*content*/}
               <div className="rounded-lg relative flex-col bg-white outline-none focus:outline-none">
                 {/*header*/}
                 <div className="flex items-center justify-between px-6 py-4 border-b border-solid border-slate-200">
-                  <h3 className="text-3xl font-semibold text-blue-500">
+                  <h3 className="text-2xl font-semibold text-blue-400">
                     {props.title}
                   </h3>
+                  <div className="text-gray-400 mx-auto">
+                    {props.date}
+                  </div>
+                  <div className="text-blue-300 mx-auto">
+                    {props.links}
+                  </div> 
                   <button
                     className="text-blue-300 background-transparent font-bold uppercase px-2 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-200 hover:text-blue-500 hover:-translate-y-1 md:ml-auto"
                     type="button"
@@ -55,33 +61,26 @@ const Modal = (props) => {
                 {/*body*/}
                 <div className="">
                   <div className="container mx-auto py-2 flex-col md:flex-row items-center flex justify-center">
-                    <div className="md:w-1/2 mb-4 lg:pr-24 md:pr-16 text-center md:text-left">
+                    <div className="md:w-1/2 mb-4 lg:pr-20 md:pr-16 pr-10 text-center md:text-left">
                       <div className="mb-2">
-                        <h3 className="text-xl text-blue-400 font-semibold">
+
+                        <h3 className="text-lg text-blue-400 font-semibold">
                           Description
                         </h3>
-                        <p className="ml-2 leading-relaxed">
+                        <p className="ml-2 text-gray-500 leading-relaxed">
                           {props.description}
                         </p>
                       </div>
                       <div className="mb-2">
-                        <h3 className="text-xl text-blue-400 font-semibold">
+                        <h3 className="text-lg text-blue-400 font-semibold">
                             Skills
                         </h3>
-                        <p className="ml-2 leading-relaxed">
+                        <p className="ml-2 text-gray-500 leading-relaxed">
                           {props.skills}
                         </p>
                       </div>
-                      <div className="mb-2">
-                        <h3 className="text-xl text-blue-400 font-semibold">
-                            Links
-                        </h3>
-                        <p className="ml-2 leading-relaxed">
-                            {props.links}
-                        </p>
-                      </div>
                     </div>
-                    <div className="md:w-1/4 w-1/2 mb-4">
+                    <div className="md:w-2/5 w-3/4 mb-4">
                       <div className="flex mx-auto mb-2 justify-center">
                         <button onClick={() => setSelectImg(0)}>
                           <img className="rounded-sm p-1 hover:-translate-y-1 hover:shadow-md duration-100" src={props.imgPaths[0]} alt="" />
