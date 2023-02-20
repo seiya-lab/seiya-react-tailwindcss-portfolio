@@ -122,7 +122,7 @@ function App() {
             <p className="pb-1">これまでに作ったものを何でも載せています</p>
           </div>
           {/* カードのdivタグ */}
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap justify-center">
             <CardNigetabi />
             <CardPortfolio />
             <CardMakeshihi />
