@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <div className="md:sticky top-0 z-50">
+      <div className="">
         <header className="text-white border-b border-gray-200 bg-blue-400">
           <div className="flex mx-auto p-1 flex-col md:flex-row items-center">
             <a
@@ -20,7 +20,7 @@ function App() {
               className="flex md:block mb-2 md:mb-0 justify-center"
             >
               <img
-                className="w-24 lg:max-w-lg p-2"
+                className="md:w-32 w-36 lg:max-w-lg p-4"
                 src="/seiyalogo.png"
               ></img>
             </a>
@@ -50,15 +50,15 @@ function App() {
       </div>
 
       <section className=" bg-navy h-screen" id="home">
-        <div className="container mx-auto">
-          <h1 className="flex justify-center text-3xl sm:text-6xl text-white font-medium pt-16 mb-2">
+        <div className="container mx-auto animate-scale-up-center">
+          <h1 className="flex justify-center text-3xl sm:text-6xl text-white font-medium pt-24 mb-2">
               Seiya Tanaka
           </h1>
           <h2 className="flex justify-center text-gray-200 text-lg sm:text-2xl mb-12 leading-relaxed">
-            Please Enjoy My Portfolio Site!
+            Thank you for your coming!
           </h2>        
           <div className="flex justify-center">
-            <img className="sm:w-64 w-36 hover:-translate-y-2 hover:-rotate-6 duration-300 ease-in-out" src="./usagi_white.svg"></img>
+            <img className="sm:w-64 w-48 hover:-translate-y-2 hover:-rotate-6 duration-300 ease-in-out" src="./usagi_white.svg"></img>
           </div> 
         </div>
       </section>
@@ -122,7 +122,7 @@ function App() {
             <p className="pb-1">これまでに作ったものを何でも載せています</p>
           </div>
           {/* カードのdivタグ */}
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap justify-center">
             <CardNigetabi />
             <CardPortfolio />
             <CardMakeshihi />

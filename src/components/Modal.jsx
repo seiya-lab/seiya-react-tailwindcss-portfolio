@@ -7,7 +7,7 @@ const Modal = (props) => {
 
   return (
     <>
-      <div className="md:w-1/2 p-4">
+      <div className="flex justify-center md:w-2/5 p-4 md:px-6">
         <button onClick={() => setShowModal(true)}>
           <WorksCard
             title={props.title}
@@ -19,7 +19,7 @@ const Modal = (props) => {
       {showModal ? (
         <>
           <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-            <div className="relative w-auto my-6 p-4 max-w-6xl lg:max-w-xl">
+            <div className="container relative my-6 p-4 max-w-6xl lg:max-w-4xl">
               {/*content*/}
               <div className="rounded-lg relative flex-col bg-white outline-none focus:outline-none">
                 {/*header*/}
