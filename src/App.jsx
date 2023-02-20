@@ -8,42 +8,84 @@ import CardYokete from "./components/contents/CardYokete";
 import CardCancelChecker from "./components/contents/CardCancelChecker";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [openMenu, setOpenMenu] = useState(false);
+  const handleMenuOpen = () => {
+    setOpenMenu(!openMenu);
+  };
 
   return (
     <>
-      <div className="">
+      <div className="sticky top-0 z-50">
         <header className="text-white border-b border-gray-200 bg-blue-400">
-          <div className="flex mx-auto p-1 flex-col md:flex-row items-center">
-            <a
-              href="#home"
-              className="flex md:block mb-2 md:mb-0 justify-center"
-            >
+          <div className="flex mx-auto px-4 flex-row items-center">
+            <a href="#home" className="">
               <img
                 className="md:w-32 w-36 lg:max-w-lg p-4"
                 src="/seiyalogo.png"
               ></img>
             </a>
-            <nav className="md:ml-auto text-base">
-              <a
-                href="#home"
-                className="mr-5 hover:text-blue-700 duration-300 font-medium"
-              >
-                Home
-              </a>
-              <a
-                href="#about"
-                className="mr-5 hover:text-blue-700 duration-300 font-medium"
-              >
-                About
-              </a>
-              <a
-                href="#works"
-                className="mr-5 hover:text-blue-700 duration-300 font-medium"
-              >
-                Works
-              </a>
-              {/* <a href="#works" className="hover:text-blue-700 duration-300 font-medium">Skills</a> */}
+
+            <button
+              onClick={handleMenuOpen}
+              type="button"
+              className="z-10 space-y-2 ml-auto"
+            >
+              <div
+                className={
+                  openMenu
+                    ? "w-8 h-0.5 bg-white translate-y-2.5 rotate-45 transition duration-500 ease-in-out"
+                    : "w-8 h-0.5 bg-white transition duration-500 ease-in-out"
+                }
+              />
+              <div
+                className={
+                  openMenu
+                    ? "opacity-0 transition duration-500 ease-in-out"
+                    : "w-8 h-0.5 bg-white transition duration-500 ease-in-out"
+                }
+              />
+              <div
+                className={
+                  openMenu
+                    ? "w-8 h-0.5 bg-white -rotate-45 transition duration-500 ease-in-out"
+                    : "w-8 h-0.5 bg-white transition duration-500 ease-in-out"
+                }
+              />
+            </button>
+
+            <nav
+              className={
+                openMenu
+                  ? "text-left fixed right-0 top-0 w-1/3 md:w-1/6 h-screen flex flex-col justify-start pt-8 px-3 bg-blue-300 rounded-lg duration-300 ease-in-out"
+                  : "fixed right-[-100%]"
+              }
+            >
+              <ul className="ml-auto text-xl md:text-3xl p-8">
+                <li>
+                  <a
+                    href="#home"
+                    className="mr-5 hover:text-blue-700 duration-300 font-medium"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    className="mr-5 hover:text-blue-700 duration-300 font-medium"
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#works"
+                    className="mr-5 hover:text-blue-700 duration-300 font-medium"
+                  >
+                    Works
+                  </a>
+                </li>
+              </ul>
             </nav>
           </div>
         </header>
@@ -51,15 +93,18 @@ function App() {
 
       <section className=" bg-navy h-screen" id="home">
         <div className="container mx-auto animate-scale-up-center">
-          <h1 className="flex justify-center text-3xl sm:text-6xl text-white font-medium pt-24 mb-2">
-              Seiya Tanaka
+          <h1 className="flex justify-center text-3xl sm:text-6xl text-white font-medium pt-24 md:pt-40 mb-2">
+            Seiya Tanaka
           </h1>
           <h2 className="flex justify-center text-gray-200 text-lg sm:text-2xl mb-12 leading-relaxed">
-            Thank you for your coming!
-          </h2>        
+            Thank you for coming!
+          </h2>
           <div className="flex justify-center">
-            <img className="sm:w-64 w-48 hover:-translate-y-2 hover:-rotate-6 duration-300 ease-in-out" src="./usagi_white.svg"></img>
-          </div> 
+            <img
+              className="sm:w-64 w-48 hover:-translate-y-2 hover:-rotate-6 duration-300 ease-in-out"
+              src="./usagi_white.svg"
+            ></img>
+          </div>
         </div>
       </section>
 
@@ -85,7 +130,7 @@ function App() {
               研究室では、「Web検索時のユーザをセンシングするブラウザ拡張機能」の開発をドイツの人工知能研究センター(DFKI)と共同で行っています。
               <br />
               創ることが好きで、アプリケーション、音楽、ゲームなど様々な開発に挑戦中です!
-            </p> 
+            </p>
           </div>
         </div>
       </section>
